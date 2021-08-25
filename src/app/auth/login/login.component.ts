@@ -37,7 +37,8 @@ export class LoginComponent implements OnInit {
     ).catch(
       (error) => {
         this.loading = false;
-        this.errorMsg = error.message;
+        this.errorMsg = "E-mail ou Mot de Passe incorrect";
+        //this.errorMsg = error.message;
       }
     );
   }
